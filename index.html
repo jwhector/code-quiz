@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/reset.css">
+        <link rel="stylesheet" href="assets/style.css">
+        <title>Glass Animals Quiz</title>
+    </head>
+    <body>
+        <header>
+            <h1>Glass Animals Quiz</h1>
+        </header>
+        <main>
+            <section id="start">
+                <h2>Welcome to the Glass Animals Quiz!</h2>
+                <p>You will be presented with a series of questions surrounding the English band Glass Animals. Correct answers will move you to the next question, while incorrect answers will deduct time/points. Your remaining time will be tallied and used as your final score.
+
+                When you are ready, press the Start button below to begin.
+                </p>
+                <button id="start-button">Start</button>
+            </section>
+            <section class="question-box hidden">
+                <h2 id="question">This is a sample question. What does this question represent you ask? Well I just don't know.</h2>
+                <section id="answers">
+                    <ul>
+                        <li><button data-label="A" id="button-1" class="button">This is a really really really really really really really long piece of text.</button></li>
+                        <li><button data-label="B" id="button-2" class="button">Answer 2</button></li>
+                        <li><button data-label="C" id="button-3" class="button">Answer 3</button></li>
+                        <li><button data-label="D" id="button-4" class="button">Answer 4</button></li>
+                    </ul>
+                    <h2 id="timer">Time: 90</h2>
+                </section>
+            </section>
+            <section id="image-box" class="hidden">
+                <img id="question-image" src="./assets/images/dreamland.jpg" />
+            </section>
+        </main>
+    </body>
+</html>
