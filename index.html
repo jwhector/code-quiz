@@ -22,16 +22,22 @@
                 <button id="start-button">Start</button>
             </section>
             <section class="question-box hidden">
-                <h2 id="question">This is a sample question. What does this question represent you ask? Well I just don't know.</h2>
-                <section id="answers">
-                    <ul>
-                        <li><button data-label="A" id="button-1" class="button">This is a really really really really really really really long piece of text.</button></li>
-                        <li><button data-label="B" id="button-2" class="button">Answer 2</button></li>
-                        <li><button data-label="C" id="button-3" class="button">Answer 3</button></li>
-                        <li><button data-label="D" id="button-4" class="button">Answer 4</button></li>
-                    </ul>
-                    <h2 id="confirmation"></h2>
-                    <h2 id="timer">Time: 90</h2>
+                <section id="quiz">
+                    <h2 id="question">This is a sample question. What does this question represent you ask? Well I just don't know.</h2>
+                    <section id="answers">
+                        <ul>
+                            <li><button data-label="A" id="button-1" class="button">This is a really really really really really really really long piece of text.</button></li>
+                            <li><button data-label="B" id="button-2" class="button">Answer 2</button></li>
+                            <li><button data-label="C" id="button-3" class="button">Answer 3</button></li>
+                            <li><button data-label="D" id="button-4" class="button">Answer 4</button></li>
+                        </ul>
+                        <h2 id="confirmation"></h2>
+                        <h2 id="timer">Time: 90</h2>
+                    </section>
+                </section>
+                <section class="hidden" id="fail">
+                    <h2>You failed!</h2>
+                    <button id="try-again">Try again?</button>
                 </section>
             </section>
             <section class="image-box hidden">
