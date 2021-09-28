@@ -13,7 +13,7 @@
             <h1>Glass Animals Quiz</h1>
         </header>
         <main>
-            <section id="start">
+            <section class="start">
                 <h2>Welcome to the Glass Animals Quiz!</h2>
                 <p>You will be presented with a series of questions surrounding the English band Glass Animals. Correct answers will move you to the next question, while incorrect answers will deduct time/points. Your remaining time will be tallied and used as your final score.
 
@@ -30,12 +30,16 @@
                         <li><button data-label="C" id="button-3" class="button">Answer 3</button></li>
                         <li><button data-label="D" id="button-4" class="button">Answer 4</button></li>
                     </ul>
+                    <h2 id="confirmation"></h2>
                     <h2 id="timer">Time: 90</h2>
                 </section>
             </section>
-            <section id="image-box" class="hidden">
-                <img id="question-image" src="./assets/images/dreamland.jpg" />
+            <section class="image-box hidden">
+                <div class="image-holder">
+                    <img id="question-image" src="./assets/images/dreamland.jpg" />
+                </div> 
             </section>
         </main>
+        <script src="./assets/script.js"></script>
     </body>
 </html>
