@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/reset.css">
         <link rel="stylesheet" href="assets/style.css">
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
         <title>Glass Animals Quiz</title>
     </head>
     <body>
@@ -22,7 +25,7 @@
                 <button id="start-button">Start</button>
             </section>
             <section class="question-box hidden">
-                <section id="quiz">
+                <section class="quiz">
                     <h2 id="question">This is a sample question. What does this question represent you ask? Well I just don't know.</h2>
                     <section id="answers">
                         <ul>
@@ -37,8 +40,18 @@
                 </section>
                 <section class="hidden" id="fail">
                     <h2>You failed!</h2>
-                    <button id="try-again">Try again?</button>
                 </section>
+                <section class="highscores hidden">
+                    <h2>High Scores</h2>
+                    <ul id="score-list"></ul>
+                    <form id="score-input">
+                        <label for="initials">Initials:</label>
+                        <input type="text" id="initials" name="initials">
+                    </form>
+                </section>
+                <button class="hidden" id="try-again">Try again?</button>
+                <button class="hidden" id="clear-highscores">Clear highscores?</button>
+
             </section>
             <section class="image-box hidden">
                 <div class="image-holder">
