@@ -1,7 +1,7 @@
 # code-quiz
 ## Jared Hector
 
-![./assets/images/web-screenshot.png]("Screenshot of a question in the web application.")
+![Screenshot of a question in the web application.](./assets/images/web-screenshot.png)
 
 https://jwhector.github.io/code-quiz/
 
