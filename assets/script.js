@@ -32,7 +32,8 @@ var questions = [
         C: "ZABA",
         D: "How to Be a Human Being",
         answer: "B",
-        image: "dreamland.jpg"
+        image: "dreamland.jpg",
+        alt: "A teal background with a pink head modeled after Dave Bayley."
     },
     {
         question: "For which popular UK music festival (shown) is Glass Animals known for?",
@@ -41,7 +42,8 @@ var questions = [
         C: "Glastonbury",
         D: "Let's Rock",
         answer: "C",
-        image: "glastonbury.jpg"
+        image: "glastonbury.jpg",
+        alt: "A festival stage with a squared roof an large half-dome on top."
     },
     {
         question: "Which band member is pictured here?",
@@ -51,6 +53,7 @@ var questions = [
         D: "Dave Bayley",
         answer: "B",
         image: "joe.png",
+        alt: "A bandd dmember with an earring, pointed eyebrows, and messy hair."
     },
     {
         question: "Which song in How to Be a Human Being features the character shown here?",
@@ -59,7 +62,8 @@ var questions = [
         C: "Pork Soda",
         D: "Season 2 Episode 3",
         answer: "D",
-        image: "liz.jpg"
+        image: "liz.jpg",
+        alt: "A woman in a teal sweatshirt sits casually on a couch behind a table full of old food."
     },
     {
         question: "Which hit song from the shown album contains the lyrics 'Twitch their toes...'?",
@@ -68,7 +72,8 @@ var questions = [
         C: "Toes",
         D: "Cocoa Hooves",
         answer: "A",
-        image: "zaba-new.png"
+        image: "zaba-new.png",
+        alt: "Album art of jungle ambiance."
     },
 ];
 
@@ -132,6 +137,7 @@ function displayQuestion() {
     button4.classList.remove('button-incorrect');
 
     image.src = `./assets/images/${curQuestion.image}`;
+    image.alt = curQuestion.alt;
 }
 
 function checkAnswer(event) {
@@ -169,7 +175,6 @@ function endQuiz(isWon) {
 
 function addHighScore(event) {
     event.preventDefault();
-
 
     const initials = initialsInput.value.trim();
 
